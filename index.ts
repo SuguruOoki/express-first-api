@@ -3,7 +3,7 @@ const app: express.Express = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-//CROS対応（というか完全無防備：本番環境ではだめ絶対）
+// CORS対応（というか完全無防備：本番環境ではだめ絶対）
 app.use((req: express.Request, res: express.Response, next: express.NextFunction) => {
 	res.header("Access-Control-Allow-Origin", "*");
 	res.header("Access-Control-Allow-Methods", "*")
@@ -11,8 +11,8 @@ app.use((req: express.Request, res: express.Response, next: express.NextFunction
 	next();
 })
 
-app.listen(3000, () => {
-	console.log("Start on port 3000.")
+app.listen(53000, () => {
+	console.log("Start on port 53000.")
 })
 
 type User = {
