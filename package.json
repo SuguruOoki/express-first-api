@@ -9,7 +9,7 @@
     "serve": "nodemon app.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "Suguru Ohki <oki.work0527@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.13",
